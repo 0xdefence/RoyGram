@@ -108,7 +108,7 @@ body {
 /* Post header */
 .posting-header {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
     padding: 8px 0px;
     font-size: 12px;
@@ -117,16 +117,31 @@ body {
 /* poster username */
 .posting-header p {
     color: #666;
-    font-weight: ;
+    font-weight: 700px;
 }
 
 .posting-header .user-poster {
-    width: 34px;
-    height: 34px;
-    margin: 0px;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
     padding: 1px;
     border: 1px solid rgb(253, 0, 0);
     box-shadow: 0 0 10px -7px red;
+}
+
+.poster-ig-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.poster-ig-name p {
+    margin: 0;
+}
+
+.more-button {
+    display: flex;
 }
 
 /* Main post image */
@@ -141,44 +156,132 @@ body {
 /* Post action buttons */
 .buttons {
     display: flex;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px 5px;
     gap: 5px;
+}
+
+.left-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.save-button {
+    display: flex;
+}
+
+/* Liked By Bar */
+.liked-by-section {
+    font-size: 12px;
+    font-weight: 400px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: auto;
+}
+
+.liked-by-image {
+    padding-right: 5px;
+}
+
+.liked-by-poster {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 1px;
+    border: 1px solid rgb(253, 0, 0);
+    box-shadow: 0 0 10px -7px red;
+}
+
+.liked-by-container {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.liked-by p {
+    color: gray;
+}
+
+.liked-by-username p {
+    color: black;
+    font-weight: bold;
+}
+
+.liked-by-number p {
+    color: black;
+    font-weight: bold;
 }
 
 /* Post caption row */
 .poster-row {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 6px;
-    padding: 3px 0;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.poster-username-comment {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 2 5px;
+}
+
+.poster-username-comment p {
+    margin: 0px
+}
+
+.doge-name p {
+    color: black;
+    font-weight: bold;
+}
+
+.doge-comment {
+    color: gray;
+    font-weight: 500px;
 }
 
 /* Caption wrapper */
-.poster {
+.poster-ig-name {
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 /* Caption text spacing */
 .poster p {
-    margin: 5px;
+    margin: 2px;
     font-size: 14px;
     font-weight: 700px;
 }
 
 /* Poster avatar */
 .user-poster {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 100px;
-    margin-bottom: 2px;
+    width: 30px;
+    height: 30px;
+    object-fit:cover;
+    border-radius: 500px;
+    padding: 2px;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0 0 10px -7px rgba(0, 0, 0, 0.8);
 }
 
 /* Poster name */
 .poster-name {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.poster-ig-username p {
     font-weight: bold;
+    color: black;
+}
+
+.poster-location p {
+    font-weight: 400px;
 }
 
 /* Comment section */
@@ -194,19 +297,29 @@ body {
     background-color:  white;
 }
 
-/* Individual comment row */
-.comment {
-    display: flex;
-    align-items: row;
-    flex-direction: row;
-    gap: 2px;
-    padding: 3px;
-}
-
 /* Comment section title */
 .comment-header h2 {
     margin: 5px 0px 5px;
-    font-size: 24px;
+    font-size: 20px;
+}
+
+/* Individual comment row */
+.comment {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2px;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.commentator p {
+    margin: 2px;
+    font-size: 12px
+}
+
+.poster-name p {
+    font-weight: bold;
 }
 
 /* Comment avatar */
@@ -223,9 +336,9 @@ body {
     color: black;
     border: 1px solid #d6d6d6;
     background-color: white;
-    margin-left: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 0;
+    padding-left: 12px;
+    padding-right: 12px;
     display: flex;
     flex-direction: row;
     background-color: #f3f3f3;
@@ -237,4 +350,5 @@ body {
 
 .add-comment p {
     margin: 3px;
+    font-size: 12px;
 }
