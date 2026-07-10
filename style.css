@@ -29,11 +29,22 @@ body {
 
 .input-search-bar {
     padding: 6px 10px;
+    display: flex;
+    align-items: row;
     border-style: solid;
     border: 1px solid #d6d6d6;
     font-size: 13px;
-    border-radius: 10px;
+    border-radius: 50px;
     background-color: #f3f3f3;
+}
+
+.search-logo {
+    color: #666;
+    box-shadow: 0 0 10px -7px rgba(0, 0, 0, 0.8);
+}
+
+.input-search-bar p {
+    margin: 1px 5px 1px 1px;
 }
 
 .buttons-on-top {
@@ -78,9 +89,9 @@ body {
 
 .posting-header {
     display: flex;
-    flex-direction: space-around;
-    justify-content: left;
-    padding: 8px 0;
+    align-items: ce;
+    justify-content: flex-start;
+    padding: 8px 0px;
     font-size: 12px;
     color: #666;
 }
@@ -137,6 +148,7 @@ body {
     padding-left: 24px;
     padding-right: 10px;
     border-top: 1px solid #eeeeee;
+    background-color:  #f3f3f3;
 }
 
 .comment {
