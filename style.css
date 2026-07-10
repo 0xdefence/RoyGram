@@ -55,11 +55,18 @@ body {
     flex-direction: column;
 }
 
+.user-story p {
+    margin: 3px 0 0;
+    font-size: 14px;
+}
+
 .otheruser-pfp {
     width: 60px;
     height: 60px;
     object-fit:cover;
     border-radius: 100px;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0 0 10px -7px rgba(0, 0, 0, 0.8);
 }
 
 .post {
