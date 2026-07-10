@@ -78,8 +78,11 @@ body {
 
 .posting-header {
     display: flex;
-    flex-direction: row;
+    flex-direction: space-around;
     justify-content: left;
+    padding: 8px 0;
+    font-size: 12px;
+    color: #666;
 }
 
 .posted-image {
@@ -93,15 +96,24 @@ body {
 .buttons {
     display: flex;
     padding: 10px;
-    gap: 2px;
+    gap: 5px;
 }
 
 .poster-row {
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 2px;
-    padding: 3px;
+    gap: 6px;
+    padding: 3px 0;
+}
+
+.poster {
+    display: flex;
+    flex-direction: column;
+}
+
+.poster p {
+    margin: 5px;
 }
 
 .user-poster {
@@ -115,10 +127,6 @@ body {
 
 .poster-name {
     font-weight: bold;
-}
-
-.poster p {
-    margin: 5px;
 }
 
 .comment-section-bundle {
