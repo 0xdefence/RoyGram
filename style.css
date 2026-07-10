@@ -171,6 +171,52 @@ body {
     display: flex;
 }
 
+/* Liked By Bar */
+.liked-by-section {
+    padding: 0cqh;
+    font-size: 10px;
+    font-weight: 400px;
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.liked-by-image {
+    padding-right: 5px;
+}
+
+.liked-by-poster {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 1px;
+    border: 1px solid rgb(253, 0, 0);
+    box-shadow: 0 0 10px -7px red;
+}
+
+.liked-by-container {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 4px
+}
+
+.liked-by p {
+    color: gray;
+}
+
+.liked-by-username p {
+    color: black;
+    font-weight: bold;
+}
+
+.liked-by-number p {
+    color: black;
+    font-weight: bold;
+}
+
 /* Post caption row */
 .poster-row {
     display: flex;
