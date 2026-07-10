@@ -135,6 +135,8 @@ body {
     flex-direction: column;
     padding-bottom: 20px;
     padding-left: 24px;
+    padding-right: 10px;
+    border-top: 1px solid #eeeeee;
 }
 
 .comment {
@@ -143,6 +145,11 @@ body {
     flex-direction: row;
     gap: 2px;
     padding: 3px;
+}
+
+.comment-header h2 {
+    margin: 5px 0px 5px;
+    font-size: 24px;
 }
 
 .comment-image {
