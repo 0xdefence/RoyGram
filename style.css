@@ -108,7 +108,7 @@ body {
 /* Post header */
 .posting-header {
     display: flex;
-    align-items: flex-end;
+    align-items: space-inbetween;
     justify-content: flex-start;
     padding: 8px 0px;
     font-size: 12px;
@@ -117,7 +117,7 @@ body {
 /* poster username */
 .posting-header p {
     color: #666;
-    font-weight: ;
+    font-weight: 700px;
 }
 
 .posting-header .user-poster {
@@ -127,6 +127,10 @@ body {
     padding: 1px;
     border: 1px solid rgb(253, 0, 0);
     box-shadow: 0 0 10px -7px red;
+}
+
+.more-button {
+    display: flex;
 }
 
 /* Main post image */
@@ -141,8 +145,19 @@ body {
 /* Post action buttons */
 .buttons {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     gap: 5px;
+}
+
+.left-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.save-button {
+    display: flex;
 }
 
 /* Post caption row */
