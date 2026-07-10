@@ -108,7 +108,7 @@ body {
 /* Post header */
 .posting-header {
     display: flex;
-    align-items: space-inbetween;
+    align-items: center;
     justify-content: flex-start;
     padding: 8px 0px;
     font-size: 12px;
@@ -121,12 +121,23 @@ body {
 }
 
 .posting-header .user-poster {
-    width: 34px;
-    height: 34px;
-    margin: 0px;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
     padding: 1px;
     border: 1px solid rgb(253, 0, 0);
     box-shadow: 0 0 10px -7px red;
+}
+
+.poster-ig-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.poster-ig-name p {
+    margin: 0;
 }
 
 .more-button {
@@ -163,16 +174,35 @@ body {
 /* Post caption row */
 .poster-row {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 6px;
-    padding: 3px 0;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.poster-username-comment {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 2 5px;
+}
+
+.poster-username-comment p {
+    margin: 0px
+}
+
+.doge-name p {
+    color: black;
+    font-weight: bold;
+}
+
+.doge-comment {
+    color: gray;
+    font-weight: 500px;
 }
 
 /* Caption wrapper */
-.poster {
+.poster-ig-name {
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 /* Caption text spacing */
@@ -193,7 +223,18 @@ body {
 
 /* Poster name */
 .poster-name {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.poster-ig-username p {
     font-weight: bold;
+    color: black;
+}
+
+.poster-location p {
+    font-weight: 400px;
 }
 
 /* Comment section */
