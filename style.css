@@ -3,6 +3,7 @@ body {
     background-color:whitesmoke;
     display: flex;
     justify-content: center;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,8 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    border-bottom-style: solid;
-    border-width: 0.1px;
+    border-bottom: 1px solid #e5e5e5;
     padding-top: 2px;
     padding-left: 10px;
     padding-right: 10px;
@@ -29,6 +29,9 @@ body {
 /* Brand heading */
 .title h1 {
     font-size: 24px;
+    font-family: "Snell Roundhand", "Apple Chancery", cursive;   
+    margin: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.21);
 }
 
 /* Search pill */
@@ -41,12 +44,13 @@ body {
     font-size: 13px;
     border-radius: 50px;
     background-color: #f3f3f3;
+    box-shadow: 0 0 10px -7px rgba(0, 0, 0, 0.8);
 }
 
 /* Search icon */
 .search-logo {
     color: #666;
-    box-shadow: 0 0 10px -7px rgba(0, 0, 0, 0.8);
+    margin: 2px
 }
 
 /* Search label */
@@ -87,7 +91,7 @@ body {
     width: 60px;
     height: 60px;
     object-fit:cover;
-    border-radius: 100px;
+    border-radius: 500px;
     border: 1px solid #d8d8d8;
     box-shadow: 0 0 10px -7px rgba(0, 0, 0, 0.8);
 }
@@ -103,11 +107,15 @@ body {
 /* Post header */
 .posting-header {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-start;
     padding: 8px 0px;
     font-size: 12px;
+}
+
+.posting-header p {
     color: #666;
+    font-weight: 700;
 }
 
 /* Main post image */
@@ -144,6 +152,8 @@ body {
 /* Caption text spacing */
 .poster p {
     margin: 5px;
+    font-size: 14px;
+    font-weight: 700px;
 }
 
 /* Poster avatar */
@@ -169,6 +179,7 @@ body {
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 10px;
+    margin-top: 10px;
     border-top: 1px solid #eeeeee;
     background-color:  #f3f3f3;
 }
@@ -176,7 +187,7 @@ body {
 /* Individual comment row */
 .comment {
     display: flex;
-    align-items: row;
+    align-items: center;
     flex-direction: row;
     gap: 2px;
     padding: 3px;
