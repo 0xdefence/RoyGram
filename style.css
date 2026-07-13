@@ -18,7 +18,7 @@ body {
 .title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: first baseline;
     gap: 10px;
     border-bottom: 1px solid #e5e5e5;
     padding-top: 2px;
@@ -35,9 +35,9 @@ body {
 
 /* Search pill */
 .input-search-bar {
-    padding: 6px 10px;
+    padding: 6px 10px 3px;
     display: flex;
-    align-items: row;
+    align-items: center;
     border-style: solid;
     border: 1px solid #d6d6d6;
     font-size: 13px;
@@ -140,7 +140,7 @@ body {
     margin: 0;
 }
 
-.more-button {
+.poster-date {
     display: flex;
 }
 
@@ -233,6 +233,10 @@ body {
     margin: 0px
 }
 
+.commentator {
+    font-size: 2px;
+}
+
 .doge-name p {
     color: black;
     font-weight: bold;
@@ -307,9 +311,18 @@ body {
 .comment {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.individual-comment {
+    display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 2px;
-    padding: 3px;
+    padding: 5px;
     font-size: 12px;
 }
 
