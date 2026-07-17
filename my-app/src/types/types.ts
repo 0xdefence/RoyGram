@@ -1,3 +1,5 @@
+export type postImageID = String;
+
 export interface User {
     username: string;
     emailaddress: string;
@@ -11,6 +13,7 @@ export interface User {
 
 export interface Post {
     postImageUrl: string;
+    postImageID: postImageID;
     postedDate: string;
     author: User; 
     caption: string;
@@ -34,11 +37,13 @@ export interface Story {
 }
 
 export interface Comment {
+    imageID: string;
+    postImageID: postImageID;
     commentImageURL: string;
     postedDate: string;
     author: User; 
-    caption: string;
+    commentText: string;
     likeCount: number; 
-    commentCount: number;
+    replyCount: number;
     GIFURL?: string;
 }
