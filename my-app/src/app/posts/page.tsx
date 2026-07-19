@@ -25,25 +25,35 @@ export default function SecondHome() {
             <InputSearchBar/>
             <TopRightButtons/>
         </div>
-        <div className="stories">
+        <div className="story-row">
+            <div className="stories">
             <StoryViewer/>
+            </div>
         </div>
-        <div>
+        <div className="post">
             <PostHeader posterPFP="Bossk" posterUserName="https://static.wikia.nocookie.net/starwars/images/1/1d/Bossk.png/revision/latest?cb=20130219044712" posterLocation="Trandosha"/>
             <PostMain/>
-            <div className="post-buttons">
+            <div className="buttons">
             <ButtonsLeft/>
             <ButtonsRight/>
             </div>
             <PosterRow/>
-            <LikedBySection likedByName="Dengar" likedByNumber={324}/>
+            <div className="liked-by-section">
+            <LikedBySection likedByName="Dengar" likedByIMGURL="https://via.placeholder.com/150" likedByNumber={324}/>
+            </div>
         </div>
+        <div className="comment-section-bundle">
+        <div className="comment-header">
         <h2>Comment section</h2>
+        </div>
+        <div className="comment">
         <CommentSection commentSectionUsername="OGDOGE" commentSectionComment="This is a comment" commentSectionPFPURL="https://via.placeholder.com/150" />
         <CommentSection commentSectionUsername="JungleJim" commentSectionComment="This is a comment" commentSectionPFPURL="https://via.placeholder.com/150" />
         <CommentSection commentSectionUsername="TruffleShuffle" commentSectionComment="This is a comment" commentSectionPFPURL="https://via.placeholder.com/150" />
         </div>
-    <div>
+        </div>
+        </div>
+    <div className="add-comment">
         <AddCommentButton/>
     </div>
     </div>

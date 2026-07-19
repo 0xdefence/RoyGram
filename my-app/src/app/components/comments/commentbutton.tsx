@@ -3,7 +3,7 @@ import { faComment } from "@fortawesome/free-solid-svg-icons";
 
 export function AddCommentButton() {
     return (
-    <div className="add-comment">
+    <div>
     <FontAwesomeIcon icon={faComment} />
     <p>Add your own comment button</p>
     </div>

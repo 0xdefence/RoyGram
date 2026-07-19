@@ -9,7 +9,7 @@ const users = [
 
 export function StoryViewer() {
     return (
-    <div className="story-viewer">
+    <div className="stories">
         {(users.map(user => <IndividualStory
             key={user.userName}
             userPFP={user.userPFP}

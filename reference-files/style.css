@@ -146,7 +146,7 @@ body {
 
 /* Main post image */
 .posted-image {
-    width: 100%;
+    width: 75%;
     height: 350px;
     box-shadow: 8px 5px 15px 0px rgba(0, 0, 0, 0.08);
     border-radius: 8px;

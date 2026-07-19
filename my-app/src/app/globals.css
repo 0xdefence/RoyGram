@@ -82,13 +82,16 @@ body {
   display: flex;
 }
 
+.story-row {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 2px;
+  padding: 5px;
+}
+
 .stories {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 2px;
-  padding: 5px;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .individual-pfp {
@@ -106,6 +109,13 @@ body {
   font-size: 14px;
 }
 
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
 .posting-header {
   display: flex;
   align-items: center;
@@ -116,7 +126,7 @@ body {
 
 .posting-header p {
   color: #666;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .posting-header .user-poster {
@@ -173,7 +183,7 @@ body {
 /* Liked By Bar */
 .liked-by-section {
   font-size: 12px;
-  font-weight: 400px;
+  font-weight: 400;
   margin: 0px;
   display: flex;
   align-items: center;
@@ -243,7 +253,7 @@ body {
 
 .doge-comment {
   color: gray;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 /* Caption wrapper */
@@ -257,7 +267,7 @@ body {
 .poster p {
   margin: 2px;
   font-size: 14px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 /* Poster avatar */
@@ -284,7 +294,7 @@ body {
 }
 
 .poster-location p {
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 /* Comment section */
