@@ -19,6 +19,13 @@
   }
 }
 
+.svg-inline--fa {
+  display: inline-block;
+  height: 1em;
+  vertical-align: -0.125em;
+
+}
+
 body {
   background-color:whitesmoke;
   display: flex;
