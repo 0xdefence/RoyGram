@@ -11,6 +11,7 @@ const postList: Post[] = [
         shareCount: 12,
         saveCount: 8,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-001",
     },
     {
         author: "HTR-002",
@@ -22,6 +23,7 @@ const postList: Post[] = [
         shareCount: 27,
         saveCount: 19,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-002",
     },
     {
         author: "HTR-003",
@@ -33,6 +35,7 @@ const postList: Post[] = [
         shareCount: 104,
         saveCount: 76,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-003",
     },
     {
         author: "HTR-004",
@@ -44,6 +47,7 @@ const postList: Post[] = [
         shareCount: 41,
         saveCount: 33,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-004",
     },
     {
         author: "HTR-005",
@@ -55,6 +59,7 @@ const postList: Post[] = [
         shareCount: 9,
         saveCount: 6,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-005",
     },
     {
         author: "HTR-006",
@@ -66,6 +71,7 @@ const postList: Post[] = [
         shareCount: 15,
         saveCount: 22,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-006",
     },
     {
         author: "HTR-007",
@@ -77,6 +83,7 @@ const postList: Post[] = [
         shareCount: 6,
         saveCount: 4,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-007",
     },
     {
         author: "HTR-008",
@@ -88,6 +95,7 @@ const postList: Post[] = [
         shareCount: 31,
         saveCount: 28,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-008",
     },
     {
         author: "HTR-009",
@@ -99,6 +107,7 @@ const postList: Post[] = [
         shareCount: 18,
         saveCount: 11,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-009",
     },
     {
         author: "HTR-010",
@@ -110,6 +119,7 @@ const postList: Post[] = [
         shareCount: 58,
         saveCount: 40,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-010",
     },
     {
         author: "HTR-011",
@@ -121,6 +131,7 @@ const postList: Post[] = [
         shareCount: 10,
         saveCount: 7,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-011",
     },
     {
         author: "HTR-012",
@@ -132,5 +143,6 @@ const postList: Post[] = [
         shareCount: 14,
         saveCount: 9,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-012",
     },
 ]

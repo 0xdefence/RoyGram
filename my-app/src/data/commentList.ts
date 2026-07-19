@@ -9,6 +9,7 @@ const commentList: Comment[] = [
         postDate: "2026-01-04",
         likeCount: 18,
         replyCount: 2,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-002",
     },
     {
         commentID: "CMT-002",
@@ -18,6 +19,7 @@ const commentList: Comment[] = [
         postDate: "2026-01-06",
         likeCount: 24,
         replyCount: 1,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-003",
     },
     {
         commentID: "CMT-003",
@@ -27,6 +29,7 @@ const commentList: Comment[] = [
         postDate: "2026-01-09",
         likeCount: 112,
         replyCount: 6,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-004",
     },
     {
         commentID: "CMT-004",
@@ -36,6 +39,7 @@ const commentList: Comment[] = [
         postDate: "2026-01-11",
         likeCount: 15,
         replyCount: 0,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-005",
     },
     {
         commentID: "CMT-005",
@@ -45,6 +49,7 @@ const commentList: Comment[] = [
         postDate: "2026-01-13",
         likeCount: 9,
         replyCount: 3,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-006",
     },
     {
         commentID: "CMT-006",
@@ -54,6 +59,7 @@ const commentList: Comment[] = [
         postDate: "2026-01-15",
         likeCount: 21,
         replyCount: 1,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-007",
     },
     {
         commentID: "CMT-007",
@@ -63,6 +69,7 @@ const commentList: Comment[] = [
         postDate: "2026-01-17",
         likeCount: 13,
         replyCount: 0,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-008",
     },
     {
         commentID: "CMT-008",
@@ -72,6 +79,7 @@ const commentList: Comment[] = [
         postDate: "2026-01-19",
         likeCount: 30,
         replyCount: 4,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-009",
     },
     {
         commentID: "CMT-009",
@@ -81,6 +89,7 @@ const commentList: Comment[] = [
         postDate: "2026-01-21",
         likeCount: 17,
         replyCount: 2,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-010",
     },
     {
         commentID: "CMT-010",
@@ -90,6 +99,7 @@ const commentList: Comment[] = [
         postDate: "2026-01-23",
         likeCount: 40,
         replyCount: 5,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-011",
     },
     {
         commentID: "CMT-011",
@@ -99,6 +109,7 @@ const commentList: Comment[] = [
         postDate: "2026-01-25",
         likeCount: 11,
         replyCount: 1,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-012",
     },
     {
         commentID: "CMT-012",
@@ -108,5 +119,6 @@ const commentList: Comment[] = [
         postDate: "2026-01-27",
         likeCount: 22,
         replyCount: 3,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-001",
     },
 ]

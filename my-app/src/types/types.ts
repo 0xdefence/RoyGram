@@ -2,12 +2,14 @@ export type UserID = string;
 export type PostID = string;
 export type StoryID = string;
 export type CommentID = string;
+export type UserPFP = string;
 
 export interface User {
     userID: UserID;
     userName: string;
     emailaddress: string;
     age: number;
+    userPFP: UserPFP;
 }
 
 export interface Post {
@@ -20,6 +22,7 @@ export interface Post {
     shareCount: number;
     saveCount: number;
     requires18Plus: boolean;
+    userPFP: UserPFP;
 }
 
 export interface Story {
@@ -30,6 +33,7 @@ export interface Story {
     likeCount: number;
     shareCount: number;
     requires18Plus: boolean;
+    userPFP: UserPFP;
 }
 
 export interface Comment {
@@ -41,5 +45,6 @@ export interface Comment {
     likeCount: number;
     replyCount: number;
     gifURL?: string;
+    userPFP: UserPFP;
 }
 

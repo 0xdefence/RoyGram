@@ -1,6 +1,6 @@
 import { Story } from "@/types/types";
 
-const storyList: Story[] = [
+export const storyList: Story[] = [
     {
         storyID: "STR-001",
         author: "HTR-001",
@@ -9,6 +9,7 @@ const storyList: Story[] = [
         likeCount: 64,
         shareCount: 3,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-001",
     },
     {
         storyID: "STR-002",
@@ -18,6 +19,7 @@ const storyList: Story[] = [
         likeCount: 89,
         shareCount: 5,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-002",
     },
     {
         storyID: "STR-003",
@@ -27,6 +29,7 @@ const storyList: Story[] = [
         likeCount: 271,
         shareCount: 22,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-003",
     },
     {
         storyID: "STR-004",
@@ -36,6 +39,7 @@ const storyList: Story[] = [
         likeCount: 158,
         shareCount: 11,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-004",
     },
     {
         storyID: "STR-005",
@@ -45,6 +49,7 @@ const storyList: Story[] = [
         likeCount: 47,
         shareCount: 2,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-005",
     },
     {
         storyID: "STR-006",
@@ -54,6 +59,7 @@ const storyList: Story[] = [
         likeCount: 76,
         shareCount: 4,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-006",
     },
     {
         storyID: "STR-007",
@@ -63,6 +69,7 @@ const storyList: Story[] = [
         likeCount: 39,
         shareCount: 1,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-007",
     },
     {
         storyID: "STR-008",
@@ -72,6 +79,7 @@ const storyList: Story[] = [
         likeCount: 112,
         shareCount: 9,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-008",
     },
     {
         storyID: "STR-009",
@@ -81,6 +89,7 @@ const storyList: Story[] = [
         likeCount: 58,
         shareCount: 3,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-009",
     },
     {
         storyID: "STR-010",
@@ -90,6 +99,7 @@ const storyList: Story[] = [
         likeCount: 194,
         shareCount: 16,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-010",
     },
     {
         storyID: "STR-011",
@@ -99,6 +109,7 @@ const storyList: Story[] = [
         likeCount: 51,
         shareCount: 2,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-011",
     },
     {
         storyID: "STR-012",
@@ -108,5 +119,6 @@ const storyList: Story[] = [
         likeCount: 63,
         shareCount: 3,
         requires18Plus: false,
+        userPFP: "https://i.pravatar.cc/150?u=HTR-012",
     },
 ]
