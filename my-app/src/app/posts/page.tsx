@@ -17,18 +17,15 @@ import { LikedBySection } from "../components/liked-by/likedbysection";
 import { AddCommentButton } from "../components/comments/commentbutton";
 
 export default function SecondHome() {
-    const mango = 2;
-    const randommango = mango * Math.random();
     return (
     <div className="app">
-    This is the post page. We have {randommango} mangos 🥭!    
         <div>
         <div className="title">
             <Title/>
             <InputSearchBar/>
             <TopRightButtons/>
         </div>
-        <div className="story-viewer">
+        <div className="stories">
             <StoryViewer/>
         </div>
         <div>
