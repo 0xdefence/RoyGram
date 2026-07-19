@@ -11,7 +11,7 @@ interface IndividualStoryProps {
 }
 
 export default function IndividualStory(props: IndividualStoryProps) {
-    const userName = props.storyID;
+    const userName = props.userName;
     const userLocation = props.userLocation;
     const userPFP = props.userPFP;
 
