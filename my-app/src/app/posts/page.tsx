@@ -17,30 +17,31 @@ import { LikedBySection } from "../components/liked-by/likedbysection";
 import { AddCommentButton } from "../components/comments/commentbutton";
 
 export default function SecondHome() {
-    const bananas = 2;
-    const randomBananas = bananas * Math.random();
+    const mango = 2;
+    const randommango = mango * Math.random();
     return (
     <div className="app">
-    This is the post page. We have {randomBananas} bananas 🍌!    
+    This is the post page. We have {randommango} mangos 🥭!    
         <div>
-        <div>
+        <div className="title">
             <Title/>
             <InputSearchBar/>
             <TopRightButtons/>
         </div>
-        <div>
+        <div className="story-viewer">
             <StoryViewer/>
         </div>
         <div>
-            <PostHeader posterPFP="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F10%2Fbored-ape-yacht-club-nft-3-4-million-record-sothebys-metaverse-1.jpg?w=1440&cbr=1&q=90&fit=max" posterUserName="Bossk" posterLocation="Trandosha"/>
+            <PostHeader posterPFP="Bossk" posterUserName="https://static.wikia.nocookie.net/starwars/images/1/1d/Bossk.png/revision/latest?cb=20130219044712" posterLocation="Trandosha"/>
             <PostMain/>
             <div className="post-buttons">
             <ButtonsLeft/>
             <ButtonsRight/>
             </div>
             <PosterRow/>
-            <LikedBySection/>
+            <LikedBySection likedByName="Dengar" likedByNumber={324}/>
         </div>
+        <h2>Comment section</h2>
         <CommentSection commentSectionUsername="OGDOGE" commentSectionComment="This is a comment" commentSectionPFPURL="https://via.placeholder.com/150" />
         <CommentSection commentSectionUsername="JungleJim" commentSectionComment="This is a comment" commentSectionPFPURL="https://via.placeholder.com/150" />
         <CommentSection commentSectionUsername="TruffleShuffle" commentSectionComment="This is a comment" commentSectionPFPURL="https://via.placeholder.com/150" />

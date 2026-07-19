@@ -12,7 +12,6 @@ export function CommentSection(props: commentSectionProps) {
     return (
 <div className="comment-section-bundle">
     <div className="comment-header">
-        <h2>Comment section</h2>
         </div>
         <div className="comment">
             <div className="individual-comment">

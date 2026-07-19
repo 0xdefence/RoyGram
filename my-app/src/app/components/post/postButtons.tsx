@@ -1,9 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart, faComment, faPaperPlane, faBookmark } from "@fortawesome/free-solid-svg-icons";
+
 export function ButtonsLeft() {
     return (
     <div className ="buttons">
-        <i className="fa-solid fa-heart"></i>
-        <i className="fa-solid fa-comment"></i>
-        <i className="fa-solid fa-paper-plane"></i>
+        <FontAwesomeIcon icon={faHeart} />
+        <FontAwesomeIcon icon={faComment} />
+        <FontAwesomeIcon icon={faPaperPlane} />
         </div>
     )
 }
@@ -11,7 +14,7 @@ export function ButtonsLeft() {
 export function ButtonsRight() {
     return (
     <div className="save-button">
-        <i className="fa-solid fa-bookmark"></i>
+        <FontAwesomeIcon icon={faBookmark} />
     </div>
     )
 }
