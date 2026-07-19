@@ -84,8 +84,9 @@ body {
 
 .story-row {
   border-bottom: 1px solid #e5e5e5;
-  margin: 2px;
-  padding: 5px;
+  margin: 14px;
+  padding: 0 12 1px;
+  gap: 10px;
 }
 
 .stories {
@@ -266,6 +267,7 @@ body {
 /* Caption text spacing */
 .poster p {
   margin: 2px;
+  font-weight: bold;
   font-size: 14px;
   font-weight: 700;
 }
@@ -302,18 +304,19 @@ body {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 10px;
-  margin-top: 10px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
   border-top: 1px solid #eeeeee;
   background-color:  white;
 }
 
 /* Comment section title */
 .comment-header h2 {
-  margin: 5px 0px 5px;
+  margin: 2px 0px 3px;
   font-size: 20px;
+  font-weight: bold;
 }
 
 /* Individual comment row */
@@ -323,15 +326,16 @@ body {
   flex-direction: column;
   gap: 2px;
   margin: 0px;
-  font-size: 12px;
+  padding: 1px;
+  font-size: 10px;
 }
 
 .individual-comment {
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: 2px;
-  padding: 5px;
+  gap: 1px;
+  padding: 2px;
   font-size: 12px;
 }
 
@@ -354,23 +358,23 @@ body {
 
 /* Add-comment button */
 .add-comment {
-  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 10px;
+  margin-top: 2px;
+  margin-left: 0;
   color: black;
   border: 1px solid #d6d6d6;
   background-color: white;
-  margin-left: 0;
-  padding-left: 12px;
-  padding-right: 12px;
-  display: flex;
-  flex-direction: row;
   background-color: #f3f3f3;
-  align-items: center;
-  border-radius: 50px;
+  border-radius: 30px;
   box-shadow: 0 0 10px -7px rgba(0, 0, 0, 0.8);
-  text-align: center;
 }
 
 .add-comment p {
-  margin: 3px;
+  margin: 10px;
   font-size: 12px;
 }

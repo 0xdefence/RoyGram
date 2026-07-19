@@ -10,8 +10,8 @@ export function CommentSection(props: commentSectionProps) {
     const commentSectionPFPURL = props.commentSectionPFPURL;
 
     return (
-<div className="comment-section-bundle">
-    <div className="comment-header">
+    <div>
+        <div>
         </div>
         <div className="comment">
             <div className="individual-comment">
