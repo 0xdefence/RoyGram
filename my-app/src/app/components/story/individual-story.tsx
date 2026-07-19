@@ -10,11 +10,13 @@ interface IndividualStoryProps {
 export default function IndividualStory(props: IndividualStoryProps) {
     const userName = props.userName;
     const userLocation = props.userLocation;
+    const userPFP = props.userPFP;
 
     return (
     <div>
     <img className="individual-pfp"
-            src="https://fastly.picsum.photos/id/237/536/354.jpg?hmac=i0yVXW1ORpyCZpQ-CknuyV-jbtU7_x9EBQVhvT5aRr0"></img>
+        src={userPFP}
+    />
         <div className="individual-nametag">
             {userName}
         </div>
