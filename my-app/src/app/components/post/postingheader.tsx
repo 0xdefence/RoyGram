@@ -1,14 +1,26 @@
-export function PostingHeader() {
+interface PosterProps {
+    posterPFP: string;
+    posterUserName: string;
+    posterLocation: string;
+}
+
+// story viewer top level
+
+export default function PostHeader(props: PosterProps) {
+    const PosterPropsPFP = props.posterPFP;
+    const PosterPropsUsername = props.posterUserName;
+    const PosterPropsLocations = props.posterLocation;
+
     return (
         <div className="posting-header">
             <img className="user-poster"
-            src="https://fastly.picsum.photos/id/237/536/354.jpg?hmac=i0yVXW1ORpyCZpQ-CknuyV-jbtU7_x9EBQVhvT5aRr0"></img>
+            src={props.posterLocation}></img>
             <div className="poster-ig-name">
                 <div className="poster-ig-username">
-                <p>OGdoge</p>
+                <p>{props.posterPFP}</p>
                 </div>
                 <div className="poster-location">
-                    <p>London, UK</p>
+                <p>{props.posterLocation}</p>
                 </div>
             </div>
         </div>

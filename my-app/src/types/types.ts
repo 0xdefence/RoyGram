@@ -1,51 +1,50 @@
-export type postImageID = String;
 export type UserID = string;
+export type PostID = string;
+export type StoryID = string;
+export type CommentID = string;
+export type UserPFP = string;
 
 export interface User {
-    username: string;
+    userID: UserID;
+    userName: string;
     emailaddress: string;
-    userId: string;
     age: number;
-    followerCount: number;
-    followingCount: number; 
-    profileimageURL: string;
-    isAgeVerified: boolean;
+    userPFP: UserPFP;
 }
 
 export interface Post {
-    postImageUrl: string;
-    postImageID: postImageID;
-    postedDate: string;
-    author: string; 
-    userId: UserID;
-    caption: string;
-    location: string;
+    author: UserID;
+    postID: PostID;
+    postDescription: string;
+    postLocation: string;
+    postDate: string;
     likeCount: number;
-    shareCount: number; 
+    shareCount: number;
     saveCount: number;
     requires18Plus: boolean;
+    userPFP: UserPFP;
 }
 
 export interface Story {
-    storyImageUrl: string;
-    postedDate: string; // 24h after, story should disappear!
-    author: UserID; 
-    caption?: string; // text on image
-    location?: string;
-    storyMusic?: string;
-    storyFilter?: string;
-    likeCount: number; 
-    shareCount: number; // stories can be shared
+    storyID: StoryID;
+    author: UserID;
+    postLocation: string;
+    postDate: string;
+    likeCount: number;
+    shareCount: number;
+    requires18Plus: boolean;
+    userPFP: UserPFP;
 }
 
 export interface Comment {
-    imageID: string;
-    postImageID: postImageID;
-    commentImageURL: string;
-    postedDate: string;
-    author: UserID; 
+    commentID: CommentID;
+    postID: PostID
+    author: UserID;
     commentText: string;
-    likeCount: number; 
+    postDate: string;
+    likeCount: number;
     replyCount: number;
-    GIFURL?: string;
+    gifURL?: string;
+    userPFP: UserPFP;
 }
+

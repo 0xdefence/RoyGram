@@ -1,9 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faImage, faHeart, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+
 export function TopRightButtons() {
     return (
     <div className ="buttons-on-top">
-        <i className="fa fa-file-photo-o"></i>
-        <i className="fa-solid fa-heart"></i>
-         <i className="fa-solid fa-paper-plane"></i>
+        <FontAwesomeIcon icon={faImage} />
+        <FontAwesomeIcon icon={faHeart} />
+        <FontAwesomeIcon icon={faPaperPlane} />
     </div>
     )
 }

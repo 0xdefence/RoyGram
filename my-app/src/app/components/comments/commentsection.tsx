@@ -1,21 +1,24 @@
+import { Comment } from "@/types/types";
+import { commentList } from "@/data/commentList";
+import { UserPFP } from "@/types/types";
+import { userList } from "@/data/userList";
+
 interface commentSectionProps {
-    commentSectionUsername: string;
-    commentSectionComment: string;
-    commentSectionPFPURL: string;   
+    commentSectionUsername: Comment["author"];
+    commentSectionComment: Comment["commentText"];
+    commentSectionPFPURL: UserPFP;   
 }
 
 export function CommentSection(props: commentSectionProps) {
-    const commentSectionUsername = props.commentSectionUsername;
     const commentSectionComment = props.commentSectionComment;
     const commentSectionPFPURL = props.commentSectionPFPURL;
 
     return (
-<div className="comment-section-bundle">
-    <div className="comment-header">
-        <h2>Comment section</h2>
-        </div>
         <div className="comment">
-            <div className="individual-comment">
+        {commentList.map((comment) => {
+                const user = userList.find((user) => user.userID === comment.author)
+            return (
+        <div className="individual-comment">
             <div className="username-logo">
                 <img className="user-poster"
                 src={commentSectionPFPURL}>
@@ -23,14 +26,15 @@ export function CommentSection(props: commentSectionProps) {
             </div>
             <div className = "commentator">
                 <div className = "poster-name">
-                    <p>@{commentSectionUsername}</p>
+                    <p>@{user?.userName ?? "Unknown"}</p>
                 </div> 
                 <div className="commentator-comment">
                 <p>{commentSectionComment}</p>
                 </div>
             </div>
         </div>
-        </div>
+            );
+        })}
     </div>
-    )
+);
 }

@@ -1,8 +1,15 @@
-export function InputSearchBar() {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComment } from "@fortawesome/free-solid-svg-icons";
+
+export function AddCommentButton() {
     return (
     <div className="add-comment">
-    <i className="fa-solid fa-comment"></i>
-    <p>Add your own comment button</p>
+    <div>
+        <FontAwesomeIcon icon={faComment}/>
+    </div>
+    <div>
+        <p>Add your own comment button</p>
+    </div>
     </div>
     )
 }

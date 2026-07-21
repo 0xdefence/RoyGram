@@ -1,14 +1,23 @@
-// story viewer top level
-const users = [{userName: "Eli", userLocation: "Quahog"},
-    {userName: "Bobby", userLocation: "Krabby Patty"},
-    {userName: "Jamie", userLocation: "Aspen"},
-    {userName: "Jack", userLocation: "Tattoine"}]
+import IndividualStory from "./individual-story"
+import { storyList } from "@/data/storyList"
+import { userList } from "@/data/userList"
 
+// story viewer top level
+// .find() searches userList for the user whose userID matches story.author
+// TODO: fix overflow on the layout!
 export function StoryViewer() {
     return (
-    <div className="story-viewer">
-        <p>This is where our stories go!</p>
-        {users.map(users)}
-    </div>
+        <div className="stories">
+            {storyList.map((story) => {
+                const user = userList.find((user) => user.userID === story.author)
+            return (
+            <IndividualStory
+                storyID={story.storyID}
+                userLocation={story.postLocation}
+                userPFP={story.userPFP}
+                userName={user?.userName ?? "Unknown"}
+            />
+    )})}
+        </div>
     )
 }
