@@ -4,6 +4,7 @@ export const postList: Post[] = [
     {
         author: "HTR-001",
         postID: "PST-001",
+        postURL: "https://picsum.photos/seed/PST-001/1080/1080",
         postDescription: "Another day, another skull for the mantle. Trandosha never gets old.",
         postLocation: "Trandosha",
         postDate: "2026-01-04",
@@ -16,7 +17,7 @@ export const postList: Post[] = [
     {
         author: "HTR-002",
         postID: "PST-002",
-        postDescription: "Two blasters, zero patience. Serenno contract closed early.",
+        postURL: "https://picsum.photos/seed/PST-010/1080/1080",        postDescription: "Two blasters, zero patience. Serenno contract closed early.",
         postLocation: "Serenno",
         postDate: "2026-01-06",
         likeCount: 331,
@@ -28,7 +29,7 @@ export const postList: Post[] = [
     {
         author: "HTR-003",
         postID: "PST-003",
-        postDescription: "This is the way I collect my bounties. Tatooine sunset, job done.",
+        postURL: "https://picsum.photos/seed/PST-010/1080/1080",        postDescription: "This is the way I collect my bounties. Tatooine sunset, job done.",
         postLocation: "Tatooine",
         postDate: "2026-01-09",
         likeCount: 892,
@@ -40,7 +41,7 @@ export const postList: Post[] = [
     {
         author: "HTR-004",
         postID: "PST-004",
-        postDescription: "Kamino rain never stopped a Fett from finishing the job.",
+        postURL: "https://picsum.photos/seed/PST-010/1080/1080",        postDescription: "Kamino rain never stopped a Fett from finishing the job.",
         postLocation: "Kamino",
         postDate: "2026-01-11",
         likeCount: 505,
@@ -52,7 +53,7 @@ export const postList: Post[] = [
     {
         author: "HTR-005",
         postID: "PST-005",
-        postDescription: "Corellia's finest still owe me for that last chase. Collecting soon.",
+        postURL: "https://picsum.photos/seed/PST-010/1080/1080",        postDescription: "Corellia's finest still owe me for that last chase. Collecting soon.",
         postLocation: "Corellia",
         postDate: "2026-01-13",
         likeCount: 178,
@@ -64,7 +65,7 @@ export const postList: Post[] = [
     {
         author: "HTR-006",
         postID: "PST-006",
-        postDescription: "Recalibrated targeting sensors on Mustafar. Efficiency up 12%.",
+        postURL: "https://picsum.photos/seed/PST-010/1080/1080",        postDescription: "Recalibrated targeting sensors on Mustafar. Efficiency up 12%.",
         postLocation: "Mustafar",
         postDate: "2026-01-15",
         likeCount: 267,
@@ -76,7 +77,7 @@ export const postList: Post[] = [
     {
         author: "HTR-007",
         postID: "PST-007",
-        postDescription: "Coruscant underworld, new face, same results. Don't ask who I was.",
+        postURL: "https://picsum.photos/seed/PST-010/1080/1080",        postDescription: "Coruscant underworld, new face, same results. Don't ask who I was.",
         postLocation: "Coruscant",
         postDate: "2026-01-17",
         likeCount: 143,
@@ -88,7 +89,7 @@ export const postList: Post[] = [
     {
         author: "HTR-008",
         postID: "PST-008",
-        postDescription: "Nar Shaddaa nights and one very overdue payment collected.",
+        postURL: "https://picsum.photos/seed/PST-010/1080/1080",        postDescription: "Nar Shaddaa nights and one very overdue payment collected.",
         postLocation: "Nar Shaddaa",
         postDate: "2026-01-19",
         likeCount: 398,
@@ -100,6 +101,7 @@ export const postList: Post[] = [
     {
         author: "HTR-009",
         postID: "PST-009",
+        postURL: "https://picsum.photos/seed/PST-009/1080/1080",
         postDescription: "Back on Kyuzo for the hat. And the bounty, I guess.",
         postLocation: "Kyuzo",
         postDate: "2026-01-21",
@@ -112,6 +114,7 @@ export const postList: Post[] = [
     {
         author: "HTR-010",
         postID: "PST-010",
+        postURL: "https://picsum.photos/seed/PST-010/1080/1080",
         postDescription: "Tatooine cantina standoff. Wasn't me who shot first, promise.",
         postLocation: "Tatooine",
         postDate: "2026-01-23",
@@ -124,7 +127,7 @@ export const postList: Post[] = [
     {
         author: "HTR-011",
         postID: "PST-011",
-        postDescription: "Gand mist walkers see all. Found my mark before sunrise.",
+        postURL: "https://picsum.photos/seed/PST-010/1080/1080",        postDescription: "Gand mist walkers see all. Found my mark before sunrise.",
         postLocation: "Gand",
         postDate: "2026-01-25",
         likeCount: 189,
@@ -136,7 +139,7 @@ export const postList: Post[] = [
     {
         author: "HTR-012",
         postID: "PST-012",
-        postDescription: "Bounty secured, analytics logged, partner unimpressed as usual.",
+        postURL: "https://picsum.photos/seed/PST-010/1080/1080",        postDescription: "Bounty secured, analytics logged, partner unimpressed as usual.",
         postLocation: "Coruscant",
         postDate: "2026-01-27",
         likeCount: 224,

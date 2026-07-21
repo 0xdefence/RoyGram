@@ -1,7 +1,12 @@
 import { postList } from "@/data/postList"
 import { userList } from "@/data/userList";
 
-export function PosterRow() {
+interface PosterRowProps {
+    userName: string;
+    postDescription: string;
+}
+
+export function PosterRow(props: PosterRowProps) {
     return (
       <div className="poster-row">
         <div className="poster">
@@ -13,11 +18,11 @@ export function PosterRow() {
             return (
               <div className="poster-username-comment" key={post.postID}>
                 <div className="doge-name">
-                  <p>{user?.userName ?? "Unknown"}</p>
+                  <p>{props.userName ?? "Unknown"}</p>
                 </div>
   
                 <div className="doge-comment">
-                  <p>{post?.postDescription ?? "Unknown"}</p>
+                  <p>{props.postDescription ?? "Unknown"}</p>
                 </div>
               </div>
             );
