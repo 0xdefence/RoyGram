@@ -1,6 +1,6 @@
 import { Post } from "@/types/types";
 
-const postList: Post[] = [
+export const postList: Post[] = [
     {
         author: "HTR-001",
         postID: "PST-001",

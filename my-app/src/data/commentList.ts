@@ -1,6 +1,6 @@
 import { Comment } from "@/types/types";
 
-const commentList: Comment[] = [
+export const commentList: Comment[] = [
     {
         commentID: "CMT-001",
         postID: "PST-001",

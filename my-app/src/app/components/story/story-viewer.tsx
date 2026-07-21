@@ -4,6 +4,7 @@ import { userList } from "@/data/userList"
 
 // story viewer top level
 // .find() searches userList for the user whose userID matches story.author
+// TODO: fix overflow on the layout!
 export function StoryViewer() {
     return (
         <div className="stories">

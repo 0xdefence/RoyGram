@@ -49,9 +49,7 @@ export default function SecondHome() {
                     <div className="comment-section-bundle">
                         <CommentSectionTitle />
                         <div className="comment">
-                            <CommentSection commentSectionUsername="OGDOGE" commentSectionComment="This is a comment" commentSectionPFPURL="https://via.placeholder.com/150" />
-                            <CommentSection commentSectionUsername="JungleJim" commentSectionComment="This is a comment" commentSectionPFPURL="https://via.placeholder.com/150" />
-                            <CommentSection commentSectionUsername="TruffleShuffle" commentSectionComment="This is a comment" commentSectionPFPURL="https://via.placeholder.com/150" />
+                            <CommentSection />
                         </div>
                         <div>
                             <AddCommentButton />
