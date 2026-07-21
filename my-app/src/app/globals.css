@@ -322,7 +322,7 @@ body {
 /* Individual comment row */
 .comment {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 2px;
   margin: 0px;
