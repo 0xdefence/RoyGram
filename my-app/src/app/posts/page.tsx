@@ -4,6 +4,9 @@
 // a DEFAULT export means the DEFAULT of the file wrote the code in, either 0 or 1
 // it doesn't need to be the same name. you have a 1-1 
 // react must ALWAYS Start with capital! 
+"use client";
+
+import { useState } from "react";
 import { Title } from "../components/header/title"
 import { InputSearchBar } from "../components/header/inputsearchbar";
 import { TopRightButtons } from "../components/header/toprightbuttons";
@@ -20,6 +23,10 @@ import { postList } from "@/data/postList";
 import { userList } from "@/data/userList";
 
 export default function SecondHome() {
+    const [isLiked, setIsLiked] = useState(false);
+    const startingLikeCount = 324;
+    const displayedLikeCount = isLiked ? startingLikeCount + 1 : startingLikeCount; 
+
     return (
         <div className="app">
             <div>
@@ -38,11 +45,15 @@ export default function SecondHome() {
                     <PostHeader posterPFP="Bossk" posterUserName="https://static.wikia.nocookie.net/starwars/images/1/1d/Bossk.png/revision/latest?cb=20130219044712" posterLocation="Trandosha" />
                     <PostMain postURL={postList[0].postURL}/>
                     <div className="buttons">
-                        <ButtonsLeft />
+                        <ButtonsLeft 
+                        isLiked={isLiked}
+                        displayedLikeCount={displayedLikeCount}
+                        onLikeClick={() => setIsLiked(!isLiked)}
+                    />
                         <ButtonsRight />
                     </div>
                     <div>
-                        <LikedBySection likedByName="Dengar" likedByIMGURL="https://via.placeholder.com/150" likedByNumber={324} />
+                        <LikedBySection likedByName="Dengar" likedByIMGURL="https://via.placeholder.com/150" likedByNumber={displayedLikeCount} />
                     </div>
                     <div>
                         <PosterRow userName={userList[0].userName} postDescription={postList[0].postDescription}/>

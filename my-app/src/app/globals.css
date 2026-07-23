@@ -177,6 +177,14 @@ body {
   gap: 12px;
 }
 
+.heart-liked {
+  color: red;
+}
+
+.heart-unliked {
+  color: black;
+}
+
 .save-button {
   display: flex;
 }
