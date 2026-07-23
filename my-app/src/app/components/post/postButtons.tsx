@@ -15,9 +15,8 @@ interface ButtonsLeftProps {
     onLikeClick: () => void;
     
     // for comments 
-    commentsDisplay: boolean;
-    isCommentDisplayed: boolean;
     onCommentClick: () => void;
+    isComment: boolean;
 }
 
 interface ButtonsRightProps {
@@ -39,7 +38,7 @@ export function ButtonsLeft(props: ButtonsLeftProps) {
         <FontAwesomeIcon 
         icon={faComment} 
         onClick={props.onCommentClick}
-        className={props.commentsDisplay? "comment-display" : "comment-nodisplay"}
+        className={props.isComment? "comment-display" : "comment-nodisplay"}
         />
         <FontAwesomeIcon icon={faPaperPlane} />
         </div>

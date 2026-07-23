@@ -4,6 +4,8 @@
 // a DEFAULT export means the DEFAULT of the file wrote the code in, either 0 or 1
 // it doesn't need to be the same name. you have a 1-1 
 // react must ALWAYS Start with capital! 
+// TODO: Persist saved state and save count to the database once backend storage is introduced.
+
 "use client";
 
 import { useState } from "react";
@@ -31,6 +33,8 @@ export default function SecondHome() {
     const startingSaveCount = postList[0].saveCount;
     const displayedSaveCount = isSaved ? startingSaveCount + 1 : startingSaveCount; 
 
+    const [CommentDisplayed, setCommentDisplayed] = useState(true);
+
     return (
         <div className="app">
             <div>
@@ -45,9 +49,6 @@ export default function SecondHome() {
                     </div>
                 </div>
 
-                // TODO: Persist saved state and save count to the database once backend storage is introduced.
-
-
                 <div className="post">
                     <PostHeader posterPFP="Bossk" posterUserName="https://static.wikia.nocookie.net/starwars/images/1/1d/Bossk.png/revision/latest?cb=20130219044712" posterLocation="Trandosha" />
                     <PostMain postURL={postList[0].postURL}/>
@@ -56,6 +57,8 @@ export default function SecondHome() {
                         isLiked={isLiked}
                         displayedLikeCount={displayedLikeCount}
                         onLikeClick={() => setIsLiked(!isLiked)}
+                        onCommentClick={() => setCommentDisplayed(!CommentDisplayed)
+                        }
                     />
                         <ButtonsRight 
                         isSaved={isSaved}
@@ -72,9 +75,11 @@ export default function SecondHome() {
 
                     <div className="comment-section-bundle">
                         <CommentSectionTitle />
+                        {CommentDisplayed && ( // use {booleanValue && ()} for conditional react displays
                         <div className="comment">
                             <CommentSection />
                         </div>
+                        )}
                         <div>
                             <AddCommentButton />
                         </div>
