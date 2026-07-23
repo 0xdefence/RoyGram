@@ -1,3 +1,7 @@
+// UserPFP is a reusable type alias for profile image URLs.
+// comment.userPFP stores the profile image used for that comment.
+// comment.author stores the user ID, which I resolve through userList.find() to get the display name.
+
 export type UserID = string;
 export type PostID = string;
 export type StoryID = string;
@@ -15,6 +19,7 @@ export interface User {
 export interface Post {
     author: UserID;
     postID: PostID;
+    postURL: string;
     postDescription: string;
     postLocation: string;
     postDate: string;

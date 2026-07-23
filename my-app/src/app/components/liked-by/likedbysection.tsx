@@ -22,7 +22,7 @@ export function LikedBySection(props: LikedByProps) {
             <p>Liked by</p>
             </div>
              <div className="liked-by-username">
-            {userName}
+            <p>{userName}</p>
             </div>
             <div className="and">
             <p>and</p>

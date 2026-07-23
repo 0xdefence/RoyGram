@@ -16,6 +16,8 @@ import { PosterRow } from "../components/post/posterRow";
 import { LikedBySection } from "../components/liked-by/likedbysection";
 import { AddCommentButton } from "../components/comments/commentbutton";
 import { CommentSectionTitle } from "../components/comments/commentsectionheader";
+import { postList } from "@/data/postList";
+import { userList } from "@/data/userList";
 
 export default function SecondHome() {
     return (
@@ -34,7 +36,7 @@ export default function SecondHome() {
 
                 <div className="post">
                     <PostHeader posterPFP="Bossk" posterUserName="https://static.wikia.nocookie.net/starwars/images/1/1d/Bossk.png/revision/latest?cb=20130219044712" posterLocation="Trandosha" />
-                    <PostMain />
+                    <PostMain postURL={postList[0].postURL}/>
                     <div className="buttons">
                         <ButtonsLeft />
                         <ButtonsRight />
@@ -43,7 +45,7 @@ export default function SecondHome() {
                         <LikedBySection likedByName="Dengar" likedByIMGURL="https://via.placeholder.com/150" likedByNumber={324} />
                     </div>
                     <div>
-                        <PosterRow />
+                        <PosterRow userName={userList[0].userName} postDescription={postList[0].postDescription}/>
                     </div>
 
                     <div className="comment-section-bundle">

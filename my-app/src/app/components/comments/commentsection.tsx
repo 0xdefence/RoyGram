@@ -1,18 +1,7 @@
-import { Comment } from "@/types/types";
 import { commentList } from "@/data/commentList";
-import { UserPFP } from "@/types/types";
 import { userList } from "@/data/userList";
 
-interface commentSectionProps {
-    commentSectionUsername: Comment["author"];
-    commentSectionComment: Comment["commentText"];
-    commentSectionPFPURL: UserPFP;   
-}
-
-export function CommentSection(props: commentSectionProps) {
-    const commentSectionComment = props.commentSectionComment;
-    const commentSectionPFPURL = props.commentSectionPFPURL;
-
+export function CommentSection() {
     return (
         <div className="comment">
         {commentList.map((comment) => {
@@ -21,7 +10,7 @@ export function CommentSection(props: commentSectionProps) {
         <div className="individual-comment">
             <div className="username-logo">
                 <img className="user-poster"
-                src={commentSectionPFPURL}>
+                src={user?.userPFP}>
                 </img>
             </div>
             <div className = "commentator">
@@ -29,12 +18,11 @@ export function CommentSection(props: commentSectionProps) {
                     <p>@{user?.userName ?? "Unknown"}</p>
                 </div> 
                 <div className="commentator-comment">
-                <p>{commentSectionComment}</p>
+                <p>{comment?.commentText}</p>
                 </div>
             </div>
         </div>
             );
         })}
     </div>
-);
-}
+);}
