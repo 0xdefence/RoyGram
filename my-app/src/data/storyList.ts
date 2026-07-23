@@ -9,7 +9,7 @@ export const storyList: Story[] = [
         likeCount: 64,
         shareCount: 3,
         requires18Plus: false,
-        userPFP: "https://i.pravatar.cc/150?u=HTR-001",
+        userPFP: "https://lumiere-a.akamaihd.net/v1/images/bossk3_1d486a31.jpeg?region=0%2C0%2C800%2C600",
     },
     {
         storyID: "STR-002",
@@ -19,7 +19,7 @@ export const storyList: Story[] = [
         likeCount: 89,
         shareCount: 5,
         requires18Plus: false,
-        userPFP: "https://i.pravatar.cc/150?u=HTR-002",
+        userPFP: "https://lumiere-a.akamaihd.net/v1/images/cad-bane-main_0ea0685c.jpeg?region=0%2C1%2C960%2C540",
     },
     {
         storyID: "STR-003",
@@ -29,7 +29,7 @@ export const storyList: Story[] = [
         likeCount: 271,
         shareCount: 22,
         requires18Plus: false,
-        userPFP: "https://i.pravatar.cc/150?u=HTR-003",
+        userPFP: "https://lumiere-a.akamaihd.net/v1/images/boba-fett-main_a8fade4d.jpeg?region=203%2C34%2C1077%2C606",
     },
     {
         storyID: "STR-004",
@@ -39,7 +39,7 @@ export const storyList: Story[] = [
         likeCount: 158,
         shareCount: 11,
         requires18Plus: false,
-        userPFP: "https://i.pravatar.cc/150?u=HTR-004",
+        userPFP: "https://lumiere-a.akamaihd.net/v1/images/databank_jangofett_01_169_884cefab.jpeg?region=0%2C0%2C1560%2C878",
     },
     {
         storyID: "STR-005",
@@ -49,7 +49,7 @@ export const storyList: Story[] = [
         likeCount: 47,
         shareCount: 2,
         requires18Plus: false,
-        userPFP: "https://i.pravatar.cc/150?u=HTR-005",
+        userPFP: "https://lumiere-a.akamaihd.net/v1/images/databank_dengar_01_169_18886b62.jpeg?region=0%2C0%2C1560%2C878",
     },
     {
         storyID: "STR-006",
@@ -59,6 +59,6 @@ export const storyList: Story[] = [
         likeCount: 76,
         shareCount: 4,
         requires18Plus: false,
-        userPFP: "https://i.pravatar.cc/150?u=HTR-006",
+        userPFP: "https://lumiere-a.akamaihd.net/v1/images/ig_88_cdd5cc52.jpeg?region=0%2C95%2C2453%2C1375",
     },
 ]

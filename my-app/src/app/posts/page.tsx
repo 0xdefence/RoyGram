@@ -50,10 +50,15 @@ export default function SecondHome() {
                 </div>
 
                 <div className="post">
-                    <PostHeader posterPFP="Bossk" posterUserName="https://static.wikia.nocookie.net/starwars/images/1/1d/Bossk.png/revision/latest?cb=20130219044712" posterLocation="Trandosha" />
+                    <PostHeader
+                        posterPFP={userList[0].userPFP}
+                        posterUserName={userList[0].userName}
+                        posterLocation={postList[0].postLocation}
+                    />
                     <PostMain postURL={postList[0].postURL}/>
                     <div className="buttons">
                         <ButtonsLeft 
+                        isComment
                         isLiked={isLiked}
                         displayedLikeCount={displayedLikeCount}
                         onLikeClick={() => setIsLiked(!isLiked)}
@@ -67,7 +72,11 @@ export default function SecondHome() {
                         />
                     </div>
                     <div>
-                        <LikedBySection likedByName="Dengar" likedByIMGURL="https://via.placeholder.com/150" likedByNumber={displayedLikeCount} />
+                        <LikedBySection
+                            likedByName={userList[4].userName}
+                            likedByIMGURL={userList[4].userPFP}
+                            likedByNumber={displayedLikeCount}
+                        />
                     </div>
                     <div>
                         <PosterRow userName={userList[0].userName} postDescription={postList[0].postDescription}/>

@@ -85,29 +85,62 @@ body {
 .story-row {
   border-bottom: 1px solid #e5e5e5;
   margin: 14px;
-  padding: 0 12 1px;
-  gap: 10px;
+  padding: 0 0 12px;
+  overflow: hidden;
 }
 
 .stories {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.individual-story {
+  display: flex;
+  flex: 0 0 68px;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+
+.stories::-webkit-scrollbar {
+  display: none;
 }
 
 .individual-pfp {
   width: 60px;
   height: 60px;
   object-fit: cover;
+  box-sizing: border-box;
+  flex-shrink: 0;
   border-radius: 500px;
   padding: 2px;
   border: 1px solid #d8d8d8;
   box-shadow: 0 0 10px -7px rgba(0, 0, 0, 0.8);
 }
 
-.individual-nametag p {
-  margin: 3px 0 0;
-  font-size: 14px;
+.individual-nametag {
+  width: 100%;
+  margin-top: 5px;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.individual-location {
+  width: 100%;
+  margin-top: 2px;
+  overflow: hidden;
+  color: #777;
+  font-size: 11px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .post {
@@ -388,7 +421,7 @@ body {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  padding-left: 50px;
+  padding-left: 10px;
   padding-right: 10px;
   margin-top: 2px;
   margin-left: 0;

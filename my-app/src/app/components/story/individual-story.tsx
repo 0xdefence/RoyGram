@@ -16,7 +16,7 @@ export default function IndividualStory(props: IndividualStoryProps) {
     const userPFP = props.userPFP;
 
     return (
-    <div>
+    <div className="individual-story">
     <img className="individual-pfp"
         src={userPFP}/>
         <div className="individual-nametag">
