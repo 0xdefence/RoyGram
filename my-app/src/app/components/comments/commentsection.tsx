@@ -1,5 +1,4 @@
 import { commentList } from "@/data/commentList";
-import { User } from "@/types/types";
 import { userList } from "@/data/userList";
 
 export function CommentSection() {
