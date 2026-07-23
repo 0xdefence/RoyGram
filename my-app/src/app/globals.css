@@ -179,9 +179,28 @@ body {
 
 .heart-liked {
   color: red;
+  filter: drop-shadow(0 0 5px red);
 }
 
 .heart-unliked {
+  color: black;
+}
+
+.comment-nodisplay {
+  color: red;
+  filter: drop-shadow(0 0 5px red);
+}
+
+.comment-display {
+  color: black;
+}
+
+.saved-yes {
+  color: blue;
+  filter: drop-shadow(0 0 5px blue);
+}
+
+.saved-no {
   color: black;
 }
 

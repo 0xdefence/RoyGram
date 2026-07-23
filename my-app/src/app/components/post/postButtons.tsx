@@ -8,10 +8,23 @@ import { faHeart, faComment, faPaperPlane, faBookmark } from "@fortawesome/free-
 // total hardcoded inside, we will add totallikes another time.
 
 interface ButtonsLeftProps {
+    // for likes 
     isLiked: boolean;
     displayedLikeCount: number;
     // this prop returns nothing
     onLikeClick: () => void;
+    
+    // for comments 
+    commentsDisplay: boolean;
+    isCommentDisplayed: boolean;
+    onCommentClick: () => void;
+}
+
+interface ButtonsRightProps {
+    // for saves
+    isSaved: boolean;
+    onSaveClick: () => void; 
+    displayedSaveCount: number;
 }
 
 
@@ -23,19 +36,24 @@ export function ButtonsLeft(props: ButtonsLeftProps) {
         onClick={props.onLikeClick}
         className={props.isLiked? "heart-liked" : "heart-unliked"}
         />
-
-        <p>{props.displayedLikeCount}</p>
-
-        <FontAwesomeIcon icon={faComment} />
+        <FontAwesomeIcon 
+        icon={faComment} 
+        onClick={props.onCommentClick}
+        className={props.commentsDisplay? "comment-display" : "comment-nodisplay"}
+        />
         <FontAwesomeIcon icon={faPaperPlane} />
         </div>
     )
 }
 
-export function ButtonsRight() {
+export function ButtonsRight(props: ButtonsRightProps) {
     return (
     <div className="save-button">
-        <FontAwesomeIcon icon={faBookmark} />
+        <FontAwesomeIcon 
+        icon={faBookmark}
+        onClick={props.onSaveClick}
+        className={props.isSaved? "saved-yes" : "saved-no"}
+        />
     </div>
     )
 }

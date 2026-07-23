@@ -27,6 +27,10 @@ export default function SecondHome() {
     const startingLikeCount = 324;
     const displayedLikeCount = isLiked ? startingLikeCount + 1 : startingLikeCount; 
 
+    const [isSaved, setIsSaved] = useState(false);
+    const startingSaveCount = postList[0].saveCount;
+    const displayedSaveCount = isSaved ? startingSaveCount + 1 : startingSaveCount; 
+
     return (
         <div className="app">
             <div>
@@ -41,6 +45,9 @@ export default function SecondHome() {
                     </div>
                 </div>
 
+                // TODO: Persist saved state and save count to the database once backend storage is introduced.
+
+
                 <div className="post">
                     <PostHeader posterPFP="Bossk" posterUserName="https://static.wikia.nocookie.net/starwars/images/1/1d/Bossk.png/revision/latest?cb=20130219044712" posterLocation="Trandosha" />
                     <PostMain postURL={postList[0].postURL}/>
@@ -50,7 +57,11 @@ export default function SecondHome() {
                         displayedLikeCount={displayedLikeCount}
                         onLikeClick={() => setIsLiked(!isLiked)}
                     />
-                        <ButtonsRight />
+                        <ButtonsRight 
+                        isSaved={isSaved}
+                        displayedSaveCount={displayedSaveCount}
+                        onSaveClick={() => setIsSaved(!isSaved)}
+                        />
                     </div>
                     <div>
                         <LikedBySection likedByName="Dengar" likedByIMGURL="https://via.placeholder.com/150" likedByNumber={displayedLikeCount} />
