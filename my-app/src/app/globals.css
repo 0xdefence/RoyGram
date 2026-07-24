@@ -335,12 +335,15 @@ body {
 .user-poster {
   width: 30px;
   height: 30px;
-  object-fit:cover;
+  object-fit: cover;
+  flex-shrink: 0;
   border-radius: 500px;
+  box-sizing: border-box;
   padding: 2px;
   border: 1px solid #d8d8d8;
   box-shadow: 0 0 10px -7px rgba(0, 0, 0, 0.8);
 }
+
 
 /* Poster name */
 .poster-name {

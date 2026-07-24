@@ -13,6 +13,7 @@ export const postList: Post[] = [
         saveCount: 8,
         requires18Plus: false,
         userPFP: "https://i.pravatar.cc/150?u=HTR-001",
+        species: "alien",
     },
     {
         author: "HTR-002",
@@ -25,6 +26,7 @@ export const postList: Post[] = [
         saveCount: 19,
         requires18Plus: false,
         userPFP: "https://i.pravatar.cc/150?u=HTR-002",
+        species: "alien",
     },
     {
         author: "HTR-003",
@@ -37,6 +39,7 @@ export const postList: Post[] = [
         saveCount: 76,
         requires18Plus: false,
         userPFP: "https://i.pravatar.cc/150?u=HTR-003",
+        species: "human",
     },
     {
         author: "HTR-004",
@@ -49,6 +52,7 @@ export const postList: Post[] = [
         saveCount: 33,
         requires18Plus: false,
         userPFP: "https://i.pravatar.cc/150?u=HTR-004",
+        species: "human",
     },
     {
         author: "HTR-005",
@@ -61,6 +65,7 @@ export const postList: Post[] = [
         saveCount: 6,
         requires18Plus: false,
         userPFP: "https://i.pravatar.cc/150?u=HTR-005",
+        species: "human",
     },
     {
         author: "HTR-006",
@@ -73,6 +78,7 @@ export const postList: Post[] = [
         saveCount: 22,
         requires18Plus: false,
         userPFP: "https://i.pravatar.cc/150?u=HTR-006",
+        species: "droid",
     },
     {
         author: "HTR-007",
@@ -85,6 +91,7 @@ export const postList: Post[] = [
         saveCount: 4,
         requires18Plus: false,
         userPFP: "https://i.pravatar.cc/150?u=HTR-007",
+        species: "alien",
     },
     {
         author: "HTR-008",
@@ -97,6 +104,7 @@ export const postList: Post[] = [
         saveCount: 28,
         requires18Plus: false,
         userPFP: "https://i.pravatar.cc/150?u=HTR-008",
+        species: "alien",
     },
     {
         author: "HTR-009",
@@ -110,6 +118,7 @@ export const postList: Post[] = [
         saveCount: 11,
         requires18Plus: false,
         userPFP: "https://i.pravatar.cc/150?u=HTR-009",
+        species: "alien",
     },
     {
         author: "HTR-010",
@@ -123,6 +132,7 @@ export const postList: Post[] = [
         saveCount: 40,
         requires18Plus: false,
         userPFP: "https://i.pravatar.cc/150?u=HTR-010",
+        species: "alien",
     },
     {
         author: "HTR-011",
@@ -135,6 +145,7 @@ export const postList: Post[] = [
         saveCount: 7,
         requires18Plus: false,
         userPFP: "https://i.pravatar.cc/150?u=HTR-011",
+        species: "alien",
     },
     {
         author: "HTR-012",
@@ -147,5 +158,6 @@ export const postList: Post[] = [
         saveCount: 9,
         requires18Plus: false,
         userPFP: "https://i.pravatar.cc/150?u=HTR-012",
+        species: "droid",
     },
 ]

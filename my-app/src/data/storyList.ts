@@ -10,6 +10,7 @@ export const storyList: Story[] = [
         shareCount: 3,
         requires18Plus: false,
         userPFP: "https://lumiere-a.akamaihd.net/v1/images/bossk3_1d486a31.jpeg?region=0%2C0%2C800%2C600",
+        species: "alien",
     },
     {
         storyID: "STR-002",
@@ -20,6 +21,7 @@ export const storyList: Story[] = [
         shareCount: 5,
         requires18Plus: false,
         userPFP: "https://lumiere-a.akamaihd.net/v1/images/cad-bane-main_0ea0685c.jpeg?region=0%2C1%2C960%2C540",
+        species: "alien",
     },
     {
         storyID: "STR-003",
@@ -30,6 +32,7 @@ export const storyList: Story[] = [
         shareCount: 22,
         requires18Plus: false,
         userPFP: "https://lumiere-a.akamaihd.net/v1/images/boba-fett-main_a8fade4d.jpeg?region=203%2C34%2C1077%2C606",
+        species: "human",
     },
     {
         storyID: "STR-004",
@@ -40,6 +43,7 @@ export const storyList: Story[] = [
         shareCount: 11,
         requires18Plus: false,
         userPFP: "https://lumiere-a.akamaihd.net/v1/images/databank_jangofett_01_169_884cefab.jpeg?region=0%2C0%2C1560%2C878",
+        species: "human",
     },
     {
         storyID: "STR-005",
@@ -50,6 +54,7 @@ export const storyList: Story[] = [
         shareCount: 2,
         requires18Plus: false,
         userPFP: "https://lumiere-a.akamaihd.net/v1/images/databank_dengar_01_169_18886b62.jpeg?region=0%2C0%2C1560%2C878",
+        species: "human",
     },
     {
         storyID: "STR-006",
@@ -60,5 +65,6 @@ export const storyList: Story[] = [
         shareCount: 4,
         requires18Plus: false,
         userPFP: "https://lumiere-a.akamaihd.net/v1/images/ig_88_cdd5cc52.jpeg?region=0%2C95%2C2453%2C1375",
+        species: "droid",
     },
 ]

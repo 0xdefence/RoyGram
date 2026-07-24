@@ -7,6 +7,7 @@ export const userList: User[] = [
     emailaddress: "bossk@bountyguild.imp",
     age: 23,
     userPFP: "https://lumiere-a.akamaihd.net/v1/images/bossk3_1d486a31.jpeg?region=0%2C0%2C800%2C600",
+    species: "alien",
     },
     {
     userID: "HTR-002",
@@ -14,6 +15,7 @@ export const userList: User[] = [
     emailaddress: "cbane@bountyguild.imp",
     age: 40,
     userPFP: "https://lumiere-a.akamaihd.net/v1/images/cad-bane-main_0ea0685c.jpeg?region=0%2C1%2C960%2C540",
+    species: "alien",
     },
     {
     userID: "HTR-003",
@@ -21,6 +23,7 @@ export const userList: User[] = [
     emailaddress: "bfett@bountyguild.imp",
     age: 32,
     userPFP: "https://lumiere-a.akamaihd.net/v1/images/boba-fett-main_a8fade4d.jpeg?region=203%2C34%2C1077%2C606",
+    species: "human",
     },
     {
     userID: "HTR-004",
@@ -28,6 +31,7 @@ export const userList: User[] = [
     emailaddress: "jfett@bountyguild.imp",
     age: 42,
     userPFP: "https://lumiere-a.akamaihd.net/v1/images/databank_jangofett_01_169_884cefab.jpeg?region=0%2C0%2C1560%2C878",
+    species: "human",
     },
     {
     userID: "HTR-005",
@@ -35,6 +39,7 @@ export const userList: User[] = [
     emailaddress: "dengar@bountyguild.imp",
     age: 45,
     userPFP: "https://lumiere-a.akamaihd.net/v1/images/databank_dengar_01_169_18886b62.jpeg?region=0%2C0%2C1560%2C878",
+    species: "human",
     },
     {
     userID: "HTR-006",
@@ -42,6 +47,7 @@ export const userList: User[] = [
     emailaddress: "ig88@bountyguild.imp",
     age: 5,
     userPFP: "https://lumiere-a.akamaihd.net/v1/images/ig_88_cdd5cc52.jpeg?region=0%2C95%2C2453%2C1375",
+    species: "droid",
     },
     {
     userID: "HTR-007",
@@ -49,6 +55,7 @@ export const userList: User[] = [
     emailaddress: "zwesell@bountyguild.imp",
     age: 36,
     userPFP: "https://lumiere-a.akamaihd.net/v1/images/zam-wesell_bbaffe9f.jpeg?region=190%2C0%2C1180%2C664",
+    species: "alien",
     },
     {
     userID: "HTR-008",
@@ -56,6 +63,7 @@ export const userList: User[] = [
     emailaddress: "asing@bountyguild.imp",
     age: 50,
     userPFP: "https://lumiere-a.akamaihd.net/v1/images/databank_aurrasing_01_169_dce3aa30.jpeg?region=0%2C0%2C1560%2C878",
+    species: "alien",
     },
     {
     userID: "HTR-009",
@@ -63,6 +71,7 @@ export const userList: User[] = [
     emailaddress: "embo@bountyguild.imp",
     age: 38,
     userPFP: "https://lumiere-a.akamaihd.net/v1/images/embo-main_903821fe.jpeg?region=0%2C242%2C1726%2C970",
+    species: "alien",
     },
     {
     userID: "HTR-010",
@@ -70,6 +79,7 @@ export const userList: User[] = [
     emailaddress: "greedo@bountyguild.imp",
     age: 35,
     userPFP: "https://lumiere-a.akamaihd.net/v1/images/databank_greedo_01_169_3e4b96ef.jpeg?region=0%2C0%2C1560%2C878",
+    species: "alien",
     },
     {
     userID: "HTR-011",
@@ -77,6 +87,7 @@ export const userList: User[] = [
     emailaddress: "zuckuss@bountyguild.imp",
     age: 60,
     userPFP: "https://lumiere-a.akamaihd.net/v1/images/zuckuss-main-image_af4f3e42.jpeg?region=0%2C212%2C1289%2C722",
+    species: "alien",
     },
     {
     userID: "HTR-012",
@@ -84,5 +95,6 @@ export const userList: User[] = [
     emailaddress: "4lom@bountyguild.imp",
     age: 8,
     userPFP: "https://lumiere-a.akamaihd.net/v1/images/4-lom_76686c0b.jpeg?region=161%2C19%2C507%2C285",
+    species: "droid",
     }
 ]

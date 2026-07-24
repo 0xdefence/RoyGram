@@ -16,6 +16,7 @@ import PostHeader from "../components/post/postingheader"
 import { PostMain } from "../components/post/postMain";
 import { ButtonsLeft, ButtonsRight } from "../components/post/postButtons";
 import { CommentSection } from "../components/comments/commentsection"
+import { CommentSpeciesFilter } from "../components/comments/commentspeciesfilter";
 import { StoryViewer } from "../components/story/story-viewer"
 import { PosterRow } from "../components/post/posterRow";
 import { LikedBySection } from "../components/liked-by/likedbysection";
@@ -84,6 +85,7 @@ export default function SecondHome() {
 
                     <div className="comment-section-bundle">
                         <CommentSectionTitle />
+                        <CommentSpeciesFilter />
                         {CommentDisplayed && ( // use {booleanValue && ()} for conditional react displays
                         <div className="comment">
                             <CommentSection />
