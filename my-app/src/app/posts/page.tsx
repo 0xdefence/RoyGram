@@ -16,7 +16,7 @@ import PostHeader from "../components/post/postingheader"
 import { PostMain } from "../components/post/postMain";
 import { ButtonsLeft, ButtonsRight } from "../components/post/postButtons";
 import { CommentSection } from "../components/comments/commentsection"
-import { CommentSpeciesFilter } from "../components/comments/commentspeciesfilter";
+import { CommentSpeciesFilter, SpeciesFilter } from "../components/comments/commentspeciesfilter";
 import { StoryViewer } from "../components/story/story-viewer"
 import { PosterRow } from "../components/post/posterRow";
 import { LikedBySection } from "../components/liked-by/likedbysection";
@@ -35,6 +35,8 @@ export default function SecondHome() {
     const displayedSaveCount = isSaved ? startingSaveCount + 1 : startingSaveCount; 
 
     const [CommentDisplayed, setCommentDisplayed] = useState(true);
+
+    const [selectedFilter, setSelectedFilter] = useState<SpeciesFilter>("all");
 
     return (
         <div className="app">
@@ -85,10 +87,15 @@ export default function SecondHome() {
 
                     <div className="comment-section-bundle">
                         <CommentSectionTitle />
-                        <CommentSpeciesFilter />
+                        <CommentSpeciesFilter 
+                            selectedFilter={selectedFilter}
+                            onFilterChange={setSelectedFilter}
+                        />
                         {CommentDisplayed && ( // use {booleanValue && ()} for conditional react displays
                         <div className="comment">
-                            <CommentSection />
+                            <CommentSection 
+                            selectedFilter={selectedFilter}
+                            />
                         </div>
                         )}
                         <div>
