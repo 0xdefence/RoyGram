@@ -10,6 +10,7 @@ export const commentList: Comment[] = [
         likeCount: 18,
         replyCount: 2,
         userPFP: "https://i.pravatar.cc/150?u=HTR-002",
+        species: "alien",
     },
     {
         commentID: "CMT-002",
@@ -20,6 +21,7 @@ export const commentList: Comment[] = [
         likeCount: 24,
         replyCount: 1,
         userPFP: "https://i.pravatar.cc/150?u=HTR-003",
+        species: "human",
     },
     {
         commentID: "CMT-003",
@@ -30,6 +32,7 @@ export const commentList: Comment[] = [
         likeCount: 112,
         replyCount: 6,
         userPFP: "https://i.pravatar.cc/150?u=HTR-004",
+        species: "human",
     },
     {
         commentID: "CMT-004",
@@ -40,6 +43,7 @@ export const commentList: Comment[] = [
         likeCount: 15,
         replyCount: 0,
         userPFP: "https://i.pravatar.cc/150?u=HTR-005",
+        species: "human",
     },
     {
         commentID: "CMT-005",
@@ -50,6 +54,7 @@ export const commentList: Comment[] = [
         likeCount: 9,
         replyCount: 3,
         userPFP: "https://i.pravatar.cc/150?u=HTR-006",
+        species: "droid",
     },
     {
         commentID: "CMT-006",
@@ -60,6 +65,7 @@ export const commentList: Comment[] = [
         likeCount: 21,
         replyCount: 1,
         userPFP: "https://i.pravatar.cc/150?u=HTR-007",
+        species: "alien",
     },
     {
         commentID: "CMT-007",
@@ -70,6 +76,7 @@ export const commentList: Comment[] = [
         likeCount: 13,
         replyCount: 0,
         userPFP: "https://i.pravatar.cc/150?u=HTR-008",
+        species: "alien",
     },
     {
         commentID: "CMT-008",
@@ -80,6 +87,7 @@ export const commentList: Comment[] = [
         likeCount: 30,
         replyCount: 4,
         userPFP: "https://i.pravatar.cc/150?u=HTR-009",
+        species: "alien",
     },
     {
         commentID: "CMT-009",
@@ -90,6 +98,7 @@ export const commentList: Comment[] = [
         likeCount: 17,
         replyCount: 2,
         userPFP: "https://i.pravatar.cc/150?u=HTR-010",
+        species: "alien",
     },
     {
         commentID: "CMT-010",
@@ -100,6 +109,7 @@ export const commentList: Comment[] = [
         likeCount: 40,
         replyCount: 5,
         userPFP: "https://i.pravatar.cc/150?u=HTR-011",
+        species: "alien",
     },
     {
         commentID: "CMT-011",
@@ -110,6 +120,7 @@ export const commentList: Comment[] = [
         likeCount: 11,
         replyCount: 1,
         userPFP: "https://i.pravatar.cc/150?u=HTR-012",
+        species: "droid",
     },
     {
         commentID: "CMT-012",
@@ -120,5 +131,6 @@ export const commentList: Comment[] = [
         likeCount: 22,
         replyCount: 3,
         userPFP: "https://i.pravatar.cc/150?u=HTR-001",
+        species: "alien",
     },
 ]

@@ -5,30 +5,26 @@ interface LikedByProps {
 }
 
 export function LikedBySection(props: LikedByProps) {
-    const userName = props.likedByName;
-    const likedNumber = props.likedByNumber; 
-    const imgURL = props.likedByIMGURL;
-
     return (
     <div className="liked-by-section">
         <div className="liked-by-image">
-           <img  
+           <img
             className="liked-by-poster"
-            src={imgURL}>
-            </img>
+            src={props.likedByIMGURL}
+            />
         </div>
         <div className="liked-by-container">
             <div className="liked-by">
             <p>Liked by</p>
             </div>
              <div className="liked-by-username">
-            <p>{userName}</p>
+            <p>{props.likedByName}</p>
             </div>
             <div className="and">
             <p>and</p>
             </div>
             <div className="liked-by-number">
-            <p>{likedNumber} others</p>
+            <p>{props.likedByNumber} others</p>
             </div>
         </div>
     </div>

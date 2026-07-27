@@ -1,10 +1,25 @@
 import { commentList } from "@/data/commentList";
 import { userList } from "@/data/userList";
+import { SpeciesFilter } from "./commentspeciesfilter";
 
-export function CommentSection() {
+interface CommentSectionProps {
+    selectedFilter: SpeciesFilter;
+}
+
+export function CommentSection(props: CommentSectionProps) {
+    const visibleComments = commentList.filter((comment) => {
+        const user = userList.find((user) => user.userID === comment.author);
+    
+    if (props.selectedFilter === "all") {
+        return true;
+    }
+    
+    return user?.species === props.selectedFilter;
+    });
+
     return (
-        <div className="comment">
-        {commentList.map((comment) => {
+        <div className="comment">            
+        {visibleComments.map((comment) => {
                 const user = userList.find((user) => user.userID === comment.author)
             return (
         <div className="individual-comment">

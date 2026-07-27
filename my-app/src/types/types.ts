@@ -7,6 +7,7 @@ export type PostID = string;
 export type StoryID = string;
 export type CommentID = string;
 export type UserPFP = string;
+export type species = "alien" | "droid" | "human";
 
 export interface User {
     userID: UserID;
@@ -14,6 +15,7 @@ export interface User {
     emailaddress: string;
     age: number;
     userPFP: UserPFP;
+    species: species;
 }
 
 export interface Post {
@@ -28,6 +30,7 @@ export interface Post {
     saveCount: number;
     requires18Plus: boolean;
     userPFP: UserPFP;
+    species: species;
 }
 
 export interface Story {
@@ -39,6 +42,7 @@ export interface Story {
     shareCount: number;
     requires18Plus: boolean;
     userPFP: UserPFP;
+    species: species;
 }
 
 export interface Comment {
@@ -51,5 +55,6 @@ export interface Comment {
     replyCount: number;
     gifURL?: string;
     userPFP: UserPFP;
+    species: species;
 }
 
