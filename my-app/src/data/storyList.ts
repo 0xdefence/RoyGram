@@ -3,6 +3,7 @@ import { Story } from "@/types/types";
 export const storyList: Story[] = [
     {
         storyID: "STR-001",
+        storyURL: "https://picsum.photos/seed/STR-001/1080/1920",
         author: "HTR-001",
         postLocation: "Trandosha",
         postDate: "2026-01-03",
@@ -14,6 +15,7 @@ export const storyList: Story[] = [
     },
     {
         storyID: "STR-002",
+        storyURL: "https://picsum.photos/seed/STR-002/1080/1920",
         author: "HTR-002",
         postLocation: "Serenno",
         postDate: "2026-01-05",
@@ -25,6 +27,7 @@ export const storyList: Story[] = [
     },
     {
         storyID: "STR-003",
+        storyURL: "https://picsum.photos/seed/STR-003/1080/1920",
         author: "HTR-003",
         postLocation: "Tatooine",
         postDate: "2026-01-08",
@@ -36,6 +39,7 @@ export const storyList: Story[] = [
     },
     {
         storyID: "STR-004",
+        storyURL: "https://picsum.photos/seed/STR-004/1080/1920",
         author: "HTR-004",
         postLocation: "Kamino",
         postDate: "2026-01-10",
@@ -47,6 +51,7 @@ export const storyList: Story[] = [
     },
     {
         storyID: "STR-005",
+        storyURL: "https://picsum.photos/seed/STR-005/1080/1920",
         author: "HTR-005",
         postLocation: "Corellia",
         postDate: "2026-01-12",
@@ -58,6 +63,7 @@ export const storyList: Story[] = [
     },
     {
         storyID: "STR-006",
+        storyURL: "https://picsum.photos/seed/STR-006/1080/1920",
         author: "HTR-006",
         postLocation: "Mustafar",
         postDate: "2026-01-14",

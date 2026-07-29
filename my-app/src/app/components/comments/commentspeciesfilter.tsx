@@ -13,8 +13,10 @@ export function CommentSpeciesFilter(props: SpeciesButtonProps) {
 
 return (
 <div className="filter-species">
-        <h4>Click to Filter Through Species</h4>
-    <div className="buttons">
+        <div className="comment-filter-species-title">
+    <h4>Click to Filter Through Species</h4>
+        </div>
+    <div className="species-buttons">
         <div className="filter-all-species"
         onClick={() => props.onFilterChange("all")}
         >

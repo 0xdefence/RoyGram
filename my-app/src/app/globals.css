@@ -376,7 +376,7 @@ body {
 /* Comment section title */
 .comment-header h2 {
   margin: 2px 0px 3px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -389,6 +389,32 @@ body {
   margin: 0px;
   padding: 1px;
   font-size: 10px;
+}
+
+.species-buttons {
+  margin: 1px;
+  padding: 5px;
+  display: flex;
+}
+
+.species-buttons p {
+  align-items: center;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 2px;
+  margin-left: 0;
+  color: black;
+  font-size: 12px;
+  border: 1px solid #d6d6d6;
+  background-color: white;
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  box-shadow: 0 0 10px -7px rgba(0, 0, 0, 0.8);
+}
+
+.comment-filter-species-title h4 {
+  font-size: 12px;
 }
 
 .individual-comment {

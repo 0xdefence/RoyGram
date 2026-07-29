@@ -35,6 +35,7 @@ export interface Post {
 
 export interface Story {
     storyID: StoryID;
+    storyURL: string;
     author: UserID;
     postLocation: string;
     postDate: string;
