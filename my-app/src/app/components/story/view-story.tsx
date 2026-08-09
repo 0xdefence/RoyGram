@@ -12,7 +12,7 @@ export function ViewStory(props: ViewStoryProps) {
         <h1> This is the IG Story!</h1>
         </div>
         <div className="IG-Story">
-            src={props.storyDisplay}
+            <img src={props.storyDisplay}></img>
         </div>
     </div>
     )
