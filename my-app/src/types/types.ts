@@ -56,6 +56,5 @@ export interface Comment {
     replyCount: number;
     gifURL?: string;
     userPFP: UserPFP;
-    species: species;
 }
 

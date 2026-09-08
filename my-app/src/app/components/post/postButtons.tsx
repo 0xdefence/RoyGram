@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faComment, faPaperPlane, faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 // total hardcoded inside, we will add totallikes another time.
+// make note of approach: props drilling! (not good: what props need to go each level)
+// use state management library (react context) 
 
 interface ButtonsLeftProps {
     // for likes 

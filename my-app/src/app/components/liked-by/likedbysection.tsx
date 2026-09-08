@@ -5,6 +5,7 @@ interface LikedByProps {
 }
 
 export function LikedBySection(props: LikedByProps) {
+
     return (
     <div className="liked-by-section">
         <div className="liked-by-image">
